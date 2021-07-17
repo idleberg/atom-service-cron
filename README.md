@@ -49,13 +49,13 @@ $ git clone https://github.com/idleberg/atom-service-cron service-cron
 Install dependencies:
 
 ```bash
-cd service-cron && npm install
+$ cd service-cron && npm install
 ```
 
 Build source:
 
 ```bash
-npm run build
+$ npm run build
 ```
 
 ## Usage
