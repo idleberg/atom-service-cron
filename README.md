@@ -117,7 +117,7 @@ export default {
 };
 ```
 
-Again, this is an experiment. I'm not sure where this is going, but I'm looking forward to your [feedback][Discussions]!
+Let me know if you have any [feedback][Discussions]!
 
 ## License
 
