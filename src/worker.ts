@@ -4,9 +4,10 @@ import cron from 'node-cron';
 const ctx: Worker = self as any;
 
 onmessage = e => {
-  const { commands, interval, view } = e.data;
+  const { commands, interval, senderID, view } = e.data;
 
   const task = cron.schedule(interval, () => ctx.postMessage({commands, view}), {
+    recipientID: senderID,
     scheduled: true
   });
 

@@ -1,4 +1,5 @@
 import { resolve as pathResolve } from 'path';
+import { v4 as UUIDv4 } from 'uuid';
 import Logger from "./log";
 
 const worker = new Worker(pathResolve(__dirname, 'cron.worker.js'));
@@ -9,17 +10,20 @@ const worker = new Worker(pathResolve(__dirname, 'cron.worker.js'));
  * @param {Object} options
  * @returns {*}
  */
-function cron(userOptions: cronOptions): Promise<void> {
+function cron(userOptions: CronOptions): Promise<void> {
   return new Promise((resolve, reject) => {
-    const options: cronOptions = {
+    const senderID = UUIDv4();
+    const options: CronOptions = {
       view: 'atom-workspace',
       ...userOptions
     };
 
     Logger.log('Registering cronjob', options);
-    worker.postMessage(options);
+    worker.postMessage({...options, senderID});
 
     worker.onmessage = async (e: MessageEvent) => {
+      if (senderID !== e.data.recipientID) return;
+
       const { commands, view } = e.data;
       let target;
 

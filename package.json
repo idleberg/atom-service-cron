@@ -45,7 +45,9 @@
       }
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "cron": "^4.3.0"
+  },
   "devDependencies": {
     "@atxm/developer-console": "^0.5.0",
     "@types/atom": "^1.40.5",
