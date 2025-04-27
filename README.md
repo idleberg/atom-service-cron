@@ -11,11 +11,11 @@ This package provides a service that let's you schedule Atom commands using a [c
 
 ## Installation
 
-### apm
+### Package Manager
 
-Install `service-cron` from Atom [install view](atom://settings-view/show-package?package=service-cron) or use the command-line equivalent:
+Install `service-hash` from the editor's [Package Manager](http://flight-manual.pulsar-editor.cc/using-atom/sections/atom-packages/) or the command-line equivalent:
 
-`$ apm install service-cron`
+`$ ppm install service-cron`
 
 ### Using Git
 
@@ -25,18 +25,18 @@ Change to your Atom packages directory:
 
 ```powershell
 # Powershell
-$ cd $Env:USERPROFILE\.atom\packages
+$ cd $Env:USERPROFILE\.pulsar\packages
 ```
 
 ```cmd
 :: Command Prompt
-$ cd %USERPROFILE%\.atom\packages
+$ cd %USERPROFILE%\.pulsar\packages
 ```
 
 **Linux & macOS**
 
 ```bash
-$ cd ~/.atom/packages/
+$ cd ~/.pulsar/packages/
 ```
 
 Clone the repository as `service-cron`:
