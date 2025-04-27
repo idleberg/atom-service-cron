@@ -2,11 +2,10 @@
 
 > Provides cronjob-inspired interface through a web worker
 
-[![apm](https://flat.badgen.net/apm/license/service-cron)](https://atom.io/packages/service-cron)
-[![apm](https://flat.badgen.net/apm/v/service-cron)](https://atom.io/packages/service-cron)
-[![apm](https://flat.badgen.net/apm/dl/service-cron)](https://atom.io/packages/service-cron)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-service-cron)](https://circleci.com/gh/idleberg/atom-service-cron)
-[![David](https://flat.badgen.net/david/dep/idleberg/atom-service-cron)](https://david-dm.org/idleberg/atom-service-cron)
+[![License](https://img.shields.io/github/license/idleberg/atom-service-cron?color=blue&style=for-the-badge)](https://github.com/idleberg/atom-service-cron/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/v/release/idleberg/atom-service-cron?style=for-the-badge)](https://github.com/idleberg/atom-service-cron/releases)
+[![Downloads](https://img.shields.io/pulsar/dt/service-cron?style=for-the-badge&color=slateblue)](https://web.pulsar-edit.dev/packages/service-cron)
+[![CI](https://img.shields.io/github/actions/workflow/status/idleberg/atom-service-cron/default.yml?style=for-the-badge)](https://github.com/idleberg/atom-service-cron/actions)
 
 This package provides a service that let's you schedule Atom commands using a [cron][Cron]-inspired interface. It utilizes a [Web Worker][Web Workers] to keep your main-thread as free as possible.
 
