@@ -13,7 +13,7 @@ This package provides a service that let's you schedule Atom commands using a [c
 
 ### Package Manager
 
-Install `service-hash` from the editor's [Package Manager](http://flight-manual.pulsar-editor.cc/using-atom/sections/atom-packages/) or the command-line equivalent:
+Install `service-hash` from the editor's [Package Manager](http://flight-manual.atom-editor.cc/using-atom/sections/atom-packages/) or the command-line equivalent:
 
 `$ ppm install service-cron`
 
